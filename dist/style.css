@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Siliguri:wght@300&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* --main-color: #0808087c; */
+  --text-color: white;
+  --font: "Dancing Script", cursive;
+  --font-main: 50px;
+  --font-: 30px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(255, 246, 218);
+  background-size: cover;
+  color: var(--text-color);
+  font-family: var(--font);
+  opacity: 5;
+}
+
+.navbar {
+  display: flex;
+  /* background-color: var(--main-color); */
+  color: var(--text-color);
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20vh;
+  background-color: #042f4b;
+}
+
+.heading {
+  font-size: var(--font-main);
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  /* color: black; */
+  gap: 5rem;
+  font-size: var(--font-);
+  cursor: pointer;
+}
+
+.Home:hover,
+.Menu:hover,
+.Contact:hover {
+  color: rgb(211, 210, 148);
+  text-decoration: underline;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color: var(--text-color);
+  font-size: var(--font-);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  gap: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #042f4b;
+}
+.burger {
+  width: 400px;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 10px;
+  background-image: url(/images/burger.jpg);
+  object-fit: none;
+  background-size: 400px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffff;
+  font-family: var(--font);
+}
+
+.burger:hover {
+  border: 1px solid #9a4f25;
+}
+
+.text {
+  padding-top: 30px;
+  /* display: flex; */
+  flex-direction: column;
+  /* gap: 4rem; */
+}
+
+.menu-rest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  background-color: #ffc5b0;
+  border-radius: 20px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 60vw;
+  color: black;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+  width: 500px;
+  cursor: pointer;
+}
+
+.image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.item-image {
+  border-radius: 10px;
+  width: 500px;
+  margin: 10px;
+  /* background-color: aqua; */
+  object-fit: contain;
+}
+.test {
+  padding-right: 10px;
+}
+.details {
+  margin: 10px 0px;
+  display: flex;
+  gap: 5rem;
+}
+
+.details-1 {
+  margin: 10px;
+}
+
+.contact-form {
+  font-family: "Poppins", sans-serif;
+  color: #042f4b;
+  width: 40vw;
+  background-color: #ffc5b0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: left;
+  padding: 10vh 10vh;
+  border-radius: 20px;
+}
+label {
+  font-weight: bolder;
+  font-size: larger;
+}
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+input:focus {
+  border: 1px solid #ed1250;
+  outline: #ed1250;
+}
+.address {
+  width: 308px;
+}
+.contact-details {
+  margin-bottom: 15px;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.send {
+  margin-top: 10px;
+  padding: 10px 10px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ed1250;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 1800px) {
+  .item {
+    text-align: center;
+    /* width: 700px; */
+  }
+  .menu-rest {
+    width: 40vw;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .item {
+    text-align: center;
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 1028px) {
+  .item {
+    text-align: center;
+    flex-direction: column;
+    width: 500px;
+  }
+  .item-image {
+    width: 1vw;
+  }
+  .test {
+    width: auto;
+  }
+  .burger {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .details {
+    gap: 1rem;
+  } 
+}
+
+
+@media all and (max-width: 600px)
+{
+  body {
+    text-align: left;
+  }
+  .contact-form {
+    width: auto;
+  }
+  .image {
+    width: 150px;
+  }
+  .item-image {
+    width: 100px;
+  }
+  .item {
+    width: 100px;
+  }
+  .details-1 {
+    width: 150px;
+  }
+}
+.hidden {
+  display: none;
+}
